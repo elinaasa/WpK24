@@ -1,0 +1,299 @@
+:root {
+  --ebony: #595a43ff;
+  --bittersweet-shimmer: #c2494cff;
+  --buff: #cea28eff;
+  --reseda-green: #807960ff;
+  --salmon-pink: #ed92a1ff;
+
+  /*palette 2 */
+  --alabaster: #ece6dfff;
+  --sage: #ccc18bff;
+  --jet: #3d3735ff;
+  --burnt-umber: #8f2e22ff;
+  --coyote: #82735bff;
+
+  /*palette 3 */
+  --silver: #d1c6c4ff;
+  --claret: #832638ff;
+  --amaranth-purple: #99324fff;
+  --charcoal: #3e5064ff;
+  --burnt-sienna: #e16f3dff;
+  --bone: #e2dbcbff;
+  --space-cadet: #282d43ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--alabaster);
+}
+
+header {
+  width: 100%;
+  height: 100px;
+}
+
+.container {
+  padding: 2rem 0;
+}
+
+header .nav-bar {
+  list-style-type: none;
+  display: flex;
+  text-decoration: none;
+}
+
+header ul {
+  margin: 0;
+}
+
+header .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-logo {
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.menu-top-nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .nav-bar li {
+  position: relative;
+}
+
+header .nav-bar li a {
+  color: var(--ebony);
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+header .nav-bar li a:hover {
+  color: var(--bittersweet-shimmer);
+}
+
+header .nav-bar li .sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  background-color: #f1f1f1;
+  list-style-type: none;
+  margin: 0.5rem 0;
+  width: 250px;
+  z-index: 99;
+}
+
+header .nav-bar li .sub-menu a {
+  color: var(--ebony);
+  text-decoration: none;
+}
+
+header .nav-bar li:hover .sub-menu {
+  display: block;
+}
+
+header .nav-bar li .sub-menu li a:hover {
+  color: var(--bittersweet-shimmer);
+}
+
+.sub-menu li {
+  margin: 2rem 0;
+}
+
+.sub-menu li a {
+  font-size: 0.9rem;
+  padding: 0.5rem;
+}
+
+.img-thumbnail {
+  width: 90%;
+  height: 100%;
+  max-width: 300px;
+  object-fit: cover;
+}
+
+/*header*/
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  flex-direction: column;
+  background-color: #f1f1f1;
+  background-color: var(--alabaster);
+}
+
+.wp-custom-header {
+  display: flex;
+  height: 600px;
+  background-color: #f1f1f1;
+  margin-bottom: 1rem;
+  background-color: var(--alabaster);
+}
+
+.wp-custom-header img {
+  width: 100%;
+  height: 100%;
+  max-width: 1600px;
+  max-height: 800px;
+  object-fit: cover;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  text-align: justify;
+  margin: 0 4rem;
+  max-width: 996px;
+}
+
+/*footer*/
+
+.footer-container {
+  background-color: var(--ebony);
+  color: #fff;
+  padding: 1rem 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  list-style: none;
+}
+
+.footer-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.footer-bar a {
+  color: #fff;
+  text-decoration: none;
+  list-style: none;
+}
+
+.footer-bar a:hover {
+  color: var(--bittersweet-shimmer);
+}
+
+/*products homepage*/
+
+.card {
+  min-width: 200px;
+  max-width: 500px;
+}
+
+.card-frontpage {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-frontpage img {
+  height: 100%;
+  max-height: 600px;
+  min-height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.products-container {
+  margin: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  border: 1px solid var(--jet);
+  color: var(--jet);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  max-width: 150px;
+}
+
+.btn:hover {
+  background-color: var(--jet);
+  color: var(--alabaster);
+}
+
+/*products page*/
+.post-content {
+  padding: 2rem;
+}
+
+.post-content img {
+  padding: 2rem;
+}
+
+.post-content p {
+  text-align: justify;
+  margin: 1rem 0;
+}
+
+.products-img {
+  margin: 2rem 2rem 0 2rem;
+}
+
+.about-content p {
+  display: flex;
+  max-width: 60%;
+}
+
+.about-content img {
+  margin: 0 2rem 0 0;
+  max-width: 40%;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .hero p {
+    margin: 0 1rem;
+  }
+  .hero img {
+    height: 300px;
+  }
+  .products-container {
+    margin: 1rem;
+  }
+
+  .card-frontpage img {
+    max-height: 600px;
+  }
+  .wp-custom-header {
+    height: 300px;
+  }
+
+  .btn {
+    padding: 0.5rem;
+  }
+  .custom-logo {
+    display: none;
+  }
+
+  header .nav-bar li a {
+    padding: 0.5rem;
+  }
+}
